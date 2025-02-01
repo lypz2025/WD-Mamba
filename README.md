@@ -6,7 +6,7 @@
 
 <div align="center">
     <img src="WD-Mamba.png" alt="Image Generation with WD-Mamba ">
-    <p>The figure above shows the images are generated with WD-Mamba.</p>
+    <p>The left section of the above figure illustrates overall generative process. The middle section shows the WD-Mamba encoder-decoder architecture. The bottom left highlights the spiral scan patterns, while the bottom right details the core Mamba block.</p>
 </div>
 
 <div align="center">
