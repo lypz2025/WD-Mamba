@@ -9,9 +9,18 @@
     <p>The left section of the above figure illustrates overall generative process. The middle section shows the WD-Mamba encoder-decoder architecture. The bottom left highlights the spiral scan patterns, while the bottom right details the core Mamba block.</p>
 </div>
 
+## Qualitative results of WD-Mamba
+
 <div align="center">
     <img src="celeba_comparison.png" alt="Generated samples on CelebAHQ daatset">
     <p>The figure above shows the comparison of generated images on CelebAHQ dataset with dfferent state-of-the-art models.</p>
+</div>
+
+## Quantitative results of WD-Mamba
+
+<div align="center">
+    <img src="fid_metric.png" alt="FID metric of several models">
+    <p>The figure above shows the comparison of FID values of generated images on several datasets with dfferent state-of-the-art models.</p>
 </div>
 
 ## More Generated Images by WD-Mamba
