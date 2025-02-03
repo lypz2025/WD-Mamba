@@ -71,3 +71,29 @@ accelerate launch --multi_gpu --gpu_ids 0,1 --main_process_port 20019 --num_proc
 accelerate launch --multi_gpu --gpu_ids 0,1 --main_process_port 20019 --num_processes 2 --mixed_precision bf16 ./train.py --config=configs/cifar10_wvit.py
 ```
 
+## Evaluation
+
+#### CelebAHQ dataset
+```shell script
+accelerate launch --multi_gpu --gpu_ids 0,1 --main_process_port 20029 --num_processes 2 --mixed_precision bf16 ./eval_ldm_uncond.py --config=configs/celeba_wvit.py --nnet_path <path for saved checkpoint>
+```
+
+#### FFHQ dataset
+```shell script
+accelerate launch --multi_gpu --gpu_ids 0,1 --main_process_port 20019 --num_processes 2 --mixed_precision bf16 ./eval_ldm_uncond.py --config=configs/ffhq_wvit.py --nnet_path <path for saved checkpoint>
+```
+#### LSUN-Bedrooms dataset
+```shell script
+accelerate launch --multi_gpu --gpu_ids 0,1 --main_process_port 20019 --num_processes 2 --mixed_precision bf16 ./eval_ldm_uncond.py --config=configs/lsun_beds_wvit.py --nnet_path <path for saved checkpoint>
+```
+
+#### LSUN-Churches dataset
+```shell script
+accelerate launch --multi_gpu --gpu_ids 0,1 --main_process_port 20019 --num_processes 2 --mixed_precision bf16 ./eval_ldm_uncond.py --config=configs/lsun_churches_wvit.py --nnet_path <path for saved checkpoint>
+```
+
+#### CIFAR10 dataset
+```shell script
+accelerate launch --multi_gpu --gpu_ids 0,1 --main_process_port 20019 --num_processes 2 --mixed_precision bf16 ./eval.py --config=configs/cifar10_wvit.py --nnet_path <path for saved checkpoint>
+```
+
