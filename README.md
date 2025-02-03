@@ -44,3 +44,10 @@
     <img src="lsun_churches.png" alt="Generated samples on LSUN Churches daatset">
     <p>The figure above shows generated images on LSUN Churches dataset.</p>
 </div>
+
+## Training
+
+
+```shell script
+accelerate launch --multi_gpu --gpu_ids 0,1 --main_process_port 20019 --num_processes 2 --mixed_precision bf16 ./train_ldm_uncond.py --config=configs/celeba_wvit.py
+```
